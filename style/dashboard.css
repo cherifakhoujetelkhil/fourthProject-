@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Barlow:wght@500&family=Kalnia&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400;1,500&family=Rubik:ital@0;1&display=swap');
+
+:root
+{
+    --primaryColor:#5C4EFB;
+}
+
+*
+ {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar contentBlock"
+    ;
+    grid-template-rows:10vh 90vh;
+    grid-template-columns: 20vw 80vw;
+    
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid rgb(187,187,187);
+
+    
+}
+.sidebar {
+    grid-area: sidebar;
+    padding: 10px;
+    border-right: 2px solid rgb(187,187,187);
+    
+    
+}
+
+.content {
+    grid-area: contentBlock;
+    background-color: #E7F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   row-gap: 10px;
+   font-size: 60px;
+   color: var(--primaryColor);
+
+}
+.content p:last-child
+{
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+.logo
+{
+    display: flex;
+    padding:5px;
+    align-items: center;
+    column-gap: 5px;
+    
+    
+
+}
+.imgLogo
+{ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+
+}
+.brandName
+{
+    font-size: 32px;
+    color: var(--primaryColor);
+    font-family: 'Kalnia', serif;
+    font-weight: 700;
+}
+.serachBar
+{
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid rgb(187,187,187);
+}
+.profilImage
+{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/ch.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+
+  
+    
+}
+.parameters
+{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+}
+.icon
+{
+    font-size: 20npx;
+    color: rgb(187,187,187);
+}
+h3
+{
+    color: rgb(146,146,146);
+    margin-bottom: 10px;
+}
+
+.nav
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    list-style: none;
+
+}
+.navLink
+{
+    display: flex;
+    column-gap: 20px;
+    padding:0 10px 0;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navIcon
+{
+    color: gray;
+}
+.navLink p 
+{
+    font-size: 20px;
+    color: rgb(187,187,187);
+}
+.navLink:hover
+{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    
+}
+.navLink:hover p,.navLink:hover .navIcon{
+    color: #fff;
+}
+.logout
+{
+    margin-top: 3px;
+}
+.content
+{
+    grid-area: contentBlock;
+    
+
+}
